@@ -100,6 +100,7 @@ export async function getStaticProps({ params }) {
     return { props: { attraction }, 
     revalidate: 10 };
   } else {
-    return { props: {} };
+    return { props: { },
+    revalidate: 10 };
   }
 }
