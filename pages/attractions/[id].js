@@ -97,8 +97,9 @@ export async function getStaticProps({ params }) {
 
   if (attractions.length > 0) {
     const attraction = attractions[0];
-    return { props: { attraction }, revalidate: 10 };
+    return { props: { attraction }, 
+    revalidate: 10 };
   } else {
-    return { props: {}, revalidate: 10,};
+    return { props: {} };
   }
 }

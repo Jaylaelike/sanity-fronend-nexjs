@@ -86,6 +86,6 @@ export async function getStaticProps() {
     props: {
       attractions,
     },
-    revalidate: 10,
+    revalidate: 10
   };
 }
