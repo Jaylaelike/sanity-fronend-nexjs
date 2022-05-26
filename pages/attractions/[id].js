@@ -1,6 +1,5 @@
 import { createClient } from "next-sanity";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 
 import imageUrlBuilder from "@sanity/image-url";
@@ -9,13 +8,12 @@ import ButtonAppBar from "../../components/ButtonAppBar";
 
 import {
   Container,
-  Grid,
   Card,
   CardActions,
   CardContent,
   CardMedia,
   Button,
-  Typography
+  Typography,
 } from "@mui/material";
 import React from "react";
 
@@ -46,11 +44,12 @@ export default function Attractions({ attraction }) {
               <Typography variant="body2" color="text.secondary">
                 {attraction?.detail}
               </Typography>
-              <Typography variant="body2"  color="text.secondary">
-              Latitude : {attraction?.latitude} ,  longitude : {attraction?.longitude}
+              <Typography variant="body2" color="text.secondary">
+                Latitude : {attraction?.latitude} , longitude :{" "}
+                {attraction?.longitude}
               </Typography>
-              <Typography variant="body2"  color="text.secondary">
-              {attraction?.longitude}
+              <Typography variant="body2" color="text.secondary">
+                {attraction?.longitude}
               </Typography>
             </CardContent>
             <CardActions>
@@ -60,18 +59,6 @@ export default function Attractions({ attraction }) {
             </CardActions>
           </Card>
         </Container>
-
-        {/* {attraction?.name} <br />
-        <Image
-          width={300}
-          height={175}
-          src={urlFor(attraction?.coverimage).width(300).url()}
-        />
-        <br />
-        {attraction?.detail} <br />
-        {attraction?.latitude} {attraction?.longitude} <br /> */}
-
-
       </main>
     </div>
   );

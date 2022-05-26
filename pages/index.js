@@ -33,8 +33,6 @@ export default function Home({ attractions }) {
               <React.Fragment>
                 {attractions.map((attraction) => (
                   <Grid item xs={12} md={4}>
-                    {/* key={attraction._id}
-                    {attraction?.name} <br /> */}
                     <Card>
                       <CardMedia
                         component="img"
