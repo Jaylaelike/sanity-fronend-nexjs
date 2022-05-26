@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { createClient } from "next-sanity";
 import imageUrlBuilder from '@sanity/image-url'
 
-import AppTopBar from '../../components/AppTopBar';
+import ButtonAppBar from '../../components/ButtonAppBar';
 
 import { 
   Container, Card, CardActions, CardContent, CardMedia, Button, Typography 
@@ -19,7 +19,7 @@ export default function Attraction({ attraction }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <AppTopBar />
+      <ButtonAppBar />
 
       <main>
         <Container maxWidth="sm" sx={{ mt: 2 }}>
