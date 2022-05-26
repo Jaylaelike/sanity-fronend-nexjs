@@ -32,7 +32,7 @@ export default function Home({ attractions }) {
             {attractions.length > 0 && (
               <React.Fragment>
                 {attractions.map((attraction) => (
-                  <Grid item xs={12} md={4}>
+                  <Grid  item xs={12} md={4} key={attraction._id}>
                     <Card>
                       <CardMedia
                         component="img"
