@@ -80,7 +80,7 @@ function urlFor(source) {
 }
 
 export async function getStaticProps() {
-  const attractions = await client.fetch(`*[_type == "attraction"]`);
+  const attractions = await client.fetch(`*[_type == "attraction"] | order(_createdAt desc)`);
   console.log(attractions);
   return {
     props: {
